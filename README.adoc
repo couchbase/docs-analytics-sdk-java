@@ -33,7 +33,7 @@ The philosophy behind the Information Architecture can be found in the https://d
 
 Antora modules used are as follows:
 
-* concept-docs -- discussion docs explaining SDK-relevant aspects of Couchbase & Columnar; in the published docs these are now interleaved with the howtos, rather than in a separate section.
+* concept-docs -- discussion docs explaining SDK-relevant aspects of Couchbase & Analytics; in the published docs these are now interleaved with the howtos, rather than in a separate section.
 This module also contains the mini landing pages which introduce each section.
 * devguide/examples -- the home of all code examples.
 * hello-world -- overview (landing page) and the introductory tutorials.
@@ -50,7 +50,7 @@ Most re-use is from single-sourced content in the https://github.com/couchbase/d
 
 === Single-sourced Content
 
-To make maintenance easier for docs of around a dozen SDKs, content that is common across SDK docsets is -- wherever possible -- single-sourced from the https://github.com/couchbase/docs-columnar-sdk-common[sdk-common] repo.
+To make maintenance easier for docs of many SDKs, content that is common across SDK docsets is -- wherever possible -- single-sourced from the https://github.com/couchbase/docs-analytics-sdk-common[sdk-analytics-common] repo.
 
 We recognise that this adds a slight cognitive burden for the new maintainer, but one layer of abstraction seems a reasonable compromise for maintainability.
 To make content re-use workable, certain replaceable attributes are used.
@@ -62,7 +62,7 @@ These are found in the antora.yml file.
 
 | `server_version:`
 | SDK dotminor releases contain new APIs to match new Server releases.
-This is the release version of Capella Columnar that this SDK release accompanied.
+This is the release version of Capella Analytics that this SDK release accompanied.
 Not often needed within the SDK documentation -- the server version in `xref` links is set with  `version-server:` (see below).
 
 | `sdk_current_version:` | Sets the current patch version.
