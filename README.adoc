@@ -1,11 +1,11 @@
-= Couchbase Columnar Java SDK Documentation
+= Couchbase Analytics Java SDK Documentation
 
 This repository hosts the documentation source for the
-https://docs.couchbase.com/columnar-java-sdk/1.0/hello-world/overview.html[Couchbase Columnar Java SDK Documentation].
+https://docs.couchbase.com/analytics-java-sdk/1.0/hello-world/overview.html[Couchbase Analytics Java SDK Documentation].
 
 
 This branch documents the 1.0 release of the SDK.
-It follows the https://docs.couchbase.com/columnar-java-sdk/1.0/project-docs/compatibility.html#api-version[columnar SDK 1.0 API].
+It follows the https://docs.couchbase.com/analytics-java-sdk/1.0/project-docs/compatibility.html#api-version[analytics SDK 1.0 API].
 
 
 == Contributing
@@ -15,7 +15,7 @@ Please test them locally, and then submit a pull request.
 A guide to using asciidoc, building Antora locally, and working with our repos can be found at https://docs.couchbase.com/home/contribute/index.html[https://docs.couchbase.com/home/contribute/index.html] (this may still be in the middle of being updated).
 
 At a minimum, to build the docs locally, you will need this repo,
-https://github.com/couchbase/docs-sdk-common[docs-sdk-common],
+https://github.com/couchbase/docs-analytics-sdk-common[docs-analytics-sdk-common],
 and the https://github.com/couchbase/docs-server[Server Docs repo]
 in your Antora playbook.
 
@@ -46,7 +46,7 @@ Docs that you need to use the software (compatibility tables, release notes, etc
 
 Within each module, docs content is mostly found in the `pages` directories, as `.adoc` files.
 Occasionally, a partial fragment in a `partials` directory contains content reused over more than one page.
-Most re-use is from single-sourced content in the https://github.com/couchbase/docs-columnar-sdk-common[sdk-common] repo.
+Most re-use is from single-sourced content in the https://github.com/couchbase/docs-analytics-sdk-common[sdk-common] repo.
 
 === Single-sourced Content
 
