@@ -1,6 +1,6 @@
-= Hello Columnar -- Java SDK Quickstart Guide
+= Java Analytics SDK Quickstart Guide
 :page-toclevels: 2
-:description: Install, connect, try. A quick start guide to get you up and running with Columnar and the {name-sdk}.
+:description: Install, connect, try. A quick start guide to get you up and running with Enterprise Analytics and the {name-sdk}.
 
 [abstract]
 {description}
@@ -9,13 +9,14 @@
 
 
 
-include::columnar-sdk:shared:partial$start-using-sdk.adoc[tag=intro]
+include::analytics-sdk:shared:partial$start-using-sdk.adoc[tag=intro]
 
 
 == Before You Start
 
 Sign up for a xref:cloud:get-started:create-account.adoc[Capella account],
-and choose a xref:columnar:intro:intro.adoc[Columnar] cluster.
+and choose an xref:analytics:intro:intro.adoc[Analytics] cluster --
+or install a self-managed Enterprise Analytics cluster.
 
 After creating the cluster, add your IP address to the list of allowed IP addresses.
 // TODO: Link to https://docs.couchbase.com/columnar/admin/ip-allowed-list.html
@@ -31,7 +32,7 @@ TIP: Remember to keep your Java installation up to date with the latest patches.
 [maven-project-template]
 == Maven Project Template
 
-The SDK's source code repository includes an https://github.com/couchbase/couchbase-jvm-clients/tree/columnar-java-client-{sdk_current_version}/columnar-java-client/examples[example Maven project] you can copy to get started quickly.
+The SDK's source code repository includes an https://github.com/couchbase/couchbase-jvm-clients/tree/analytics-java-client-{sdk_current_version}/analytics-java-client/examples[example Maven project] you can copy to get started quickly.
 
 == Adding the SDK to an Existing Project
 
@@ -44,9 +45,9 @@ To see log messages from the SDK, xref:howtos:logging.adoc[include an SLF4J bind
 
 [source,java]
 ----
-import com.couchbase.columnar.client.java.Cluster;
-import com.couchbase.columnar.client.java.Credential;
-import com.couchbase.columnar.client.java.QueryResult;
+import com.couchbase.analytics.client.java.Cluster;
+import com.couchbase.analytics.client.java.Credential;
+import com.couchbase.analytics.client.java.QueryResult;
 
 import java.util.List;
 
