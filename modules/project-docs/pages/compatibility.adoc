@@ -20,7 +20,7 @@ TIP: Remember to keep your Java installation up to date with the latest patches.
 
 === JDK Version Compatibility
 
-include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=jdk-version]
+include::{sdk_api}@analytics-sdk:shared:partial$compatibility.adoc[tag=jdk-version]
 
 
 
@@ -28,7 +28,7 @@ include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=jdk-versio
 
 === OS Compatibility
 
-include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=os-compat-jvm]
+include::{sdk_api}@analytics-sdk:shared:partial$compatibility.adoc[tag=os-compat-jvm]
 
 
 
@@ -36,20 +36,20 @@ include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=os-compat-
 
 === Network Requirements
 
-include::{sdk_api}@columnar-sdk:shared:partial$network-requirements.adoc[tag=lan-like]
+include::{sdk_api}@analytics-sdk:shared:partial$network-requirements.adoc[tag=lan-like]
 
 
 
 
 
 
-== Capella Columnar Compatibility
+== Capella Analytics Compatibility
 
 
-Capella Columnar is a fully hosted service, continually updated, and offering the latest version --
+Capella Analytics is a fully hosted service, continually updated, and offering the latest version --
 with users having a few weeks to upgrade from the previous version.
 As such, the latest Couchbase Columnar SDKs are tested against the latest versions.
-Where older versions of the {name-sdk} pre-date significant new features in Columnar, those differences will be noted in this section.
+Where older versions of the {name-sdk} pre-date significant new features in Analytics, those differences will be noted in this section.
 
 
 
@@ -59,7 +59,7 @@ Where older versions of the {name-sdk} pre-date significant new features in Colu
 ////
 === API Version
 
-include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=api-version]
+include::{sdk_api}@analytics-sdk:shared:partial$compatibility.adoc[tag=api-version]
 ////
 
 
@@ -69,7 +69,7 @@ include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=api-versio
 
 === Interface Stability
 
-include::{version-common}@columnar-sdk:shared:partial$interface-stability-pars.adoc[tag=interface-stability-section]
+include::{version-common}@analytics-sdk:shared:partial$interface-stability-pars.adoc[tag=interface-stability-section]
 
 
 
