@@ -1,7 +1,7 @@
 = Couchbase Analytics Java SDK Documentation
 
 This repository hosts the documentation source for the
-https://docs.couchbase.com/analytics-java-sdk/1.0/hello-world/overview.html[Couchbase Analytics Java SDK Documentation].
+https://docs.couchbase.com/analytics-java-sdk/1.0/hello-world/overview.html[Analytics Java SDK Documentation].
 
 
 This branch documents the 1.0 release of the SDK.

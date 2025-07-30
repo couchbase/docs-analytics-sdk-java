@@ -18,7 +18,7 @@ see our xref:java-sdk:hello-world:overview.adoc[Java Server SDK].
 
 == icon:database[] Using Your Columnar Cluster
 
-How-to guides and tutorials to help you start your development journey with Columnar and the Java SDK.
+How-to guides and tutorials to help you start your development journey with Enterprise Analytics and the Java SDK.
 
 ++++
 <div class="card-row three-column-row">
