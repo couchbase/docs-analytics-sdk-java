@@ -1,5 +1,5 @@
 = Managing Connections
-:description: This section describes how to connect the {name-sdk} to a Couchbase cluster.
+:description: This section describes how to connect the {name-sdk} to an Analytics cluster.
 :page-toclevels: 2
 
 
@@ -16,7 +16,7 @@
 It contains best practices as well as information on TLS/SSL and advanced connection options, and a sub-page on troubleshooting Cloud connections.
 
 
-Our xref:hello-world:start-using-sdk.adoc[Getting Started pages] cover the basics of making a connection to a Capella Columnar cluster.
+Our xref:hello-world:start-using-sdk.adoc[Getting Started pages] cover the basics of making a connection to an Enterprise Analytics cluster (Capella or self-managed).
 This page is a wider look at the topic.
 
 
