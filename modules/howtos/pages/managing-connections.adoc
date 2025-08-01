@@ -41,7 +41,7 @@ The simplest way to create a `Cluster` object is to call `Cluster.newInstance()`
 ----
 public class Example {
   public static void main(String[] args) {
-    var connectionString = "couchbases://cb.<your-endpoint>.cloud.couchbase.com";
+    var connectionString = "192.168.5.5:18095";
     var username = "...";
     var password = "...";
 
@@ -70,13 +70,36 @@ A Couchbase connection string is a comma-delimited list of IP addresses and/or h
 The parameter list is just like the query component of a URI; name-value pairs have an equals sign (`=`) separating the name and value, with an ampersand (`&`) between each pair.
 Just as in a URI, the first parameter is prefixed by a question mark (`?`).
 
-For Columnar, as for all Capella products, connection must be made with Transport Layer Security (TLS) -- for full encryption of client-side traffic --
-for which the `couchbases://` schema is used as the root of the connection string (note the trailing *s*).
+// For Columnar, as for all Capella products, connection must be made with Transport Layer Security (TLS) -- for full encryption of client-side traffic --
+// for which the `couchbases://` schema is used as the root of the connection string (note the trailing *s*).
+
+
+==== Without Load Balancer
 
 .Simple connection string
 ----
-couchbases://cb.<your-endpoint>.cloud.couchbase.com
+https://192.168.5.5:18095
 ----
+
+.Simple connection string without TLS (local testing)
+----
+http://192.168.5.5:8095
+----
+
+
+==== With Load Balancer
+
+.Simple connection string
+----
+https://192.168.5.5:443
+----
+
+.Simple connection string without TLS (local testing)
+----
+http://192.168.5.5:80
+----
+
+
 
 ////
 In a production environment, your connection string should include the addresses of multiple server nodes in case some are currently unavailable.
@@ -94,7 +117,7 @@ The client fetches the full address list from the first node it is able to conta
 
 .Connection string with two parameters
 ----
-couchbases://cb.<your-endpoint>.cloud.couchbase.com?timeout.connect_timeout=30s&timeout.query_timeout=2m
+couchbases://localhost:8095?timeout.connect_timeout=30s&timeout.query_timeout=2m
 ----
 
 The full list of recognized parameters is documented in the xref:ref:client-settings.adoc[client settings reference].
@@ -252,7 +275,7 @@ Proceeding with normal bootstrap.
 ----
 ////
 
-
+////
 == Local Development
 
 
@@ -266,4 +289,4 @@ More details on connecting your client code to Couchbase Capella can be found xr
 Some DNS caching providers (notably, home routers) can’t handle an SRV record that’s large -- if you have DNS-SRV issues with such a set-up, reduce your DNS-SRV to only include three records.
 [_For development only, not production._]. 
 Our xref:troubleshooting-connections.adoc[Troubleshooting Connections] page will help you to diagnose this and other problems -- as well as introducing the SDK doctor tool.
-
+////
