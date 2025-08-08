@@ -62,18 +62,17 @@ NOTE: Capella's root certificate is *not* signed by a well known Certificate Aut
 However, the certificate is bundled with the SDK, and is automatically trusted unless you specify a different certificate to trust.
 
 
+== Connection Strings
 
-=== Connection Strings
 
-A Couchbase connection string is a comma-delimited list of IP addresses and/or hostnames, optionally followed by a list of parameters.
+include::{version-common}@analytics-sdk:shared:partial$connstr.adoc[tag=more-connstr]
 
-The parameter list is just like the query component of a URI; name-value pairs have an equals sign (`=`) separating the name and value, with an ampersand (`&`) between each pair.
-Just as in a URI, the first parameter is prefixed by a question mark (`?`).
+
 
 // For Columnar, as for all Capella products, connection must be made with Transport Layer Security (TLS) -- for full encryption of client-side traffic --
 // for which the `couchbases://` schema is used as the root of the connection string (note the trailing *s*).
 
-
+////
 ==== Without Load Balancer
 
 .Simple connection string
@@ -98,7 +97,7 @@ https://192.168.5.5:443
 ----
 http://192.168.5.5:80
 ----
-
+////
 
 
 ////
