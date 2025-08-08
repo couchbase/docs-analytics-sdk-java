@@ -1,4 +1,4 @@
-= Java Analytics SDK Quickstart Guide
+= {name-sdk} Quickstart Guide
 :page-toclevels: 2
 :description: Install, connect, try. A quick start guide to get you up and running with Enterprise Analytics and the {name-sdk}.
 
@@ -14,11 +14,10 @@ include::analytics-sdk:shared:partial$start-using-sdk.adoc[tag=intro]
 
 == Before You Start
 
-Sign up for a xref:cloud:get-started:create-account.adoc[Capella account],
-and choose an xref:analytics:intro:intro.adoc[Analytics] cluster --
-or install a self-managed Enterprise Analytics cluster.
+Install and configure an xref:enterprise-analytics:intro:intro.adoc[Enterprise Analytics Cluster].
 
-After creating the cluster, add your IP address to the list of allowed IP addresses.
+
+// After creating the cluster, add your IP address to the list of allowed IP addresses.
 // TODO: Link to https://docs.couchbase.com/columnar/admin/ip-allowed-list.html
 
 [#minimum-java-version]
@@ -32,7 +31,7 @@ TIP: Remember to keep your Java installation up to date with the latest patches.
 [maven-project-template]
 == Maven Project Template
 
-The SDK's source code repository includes an https://github.com/couchbase/couchbase-jvm-clients/tree/analytics-java-client-{sdk_current_version}/analytics-java-client/examples[example Maven project] you can copy to get started quickly.
+The SDK's source code repository includes an https://github.com/couchbaselabs/couchbase-jvm-clients/tree/analytics-java-client-{sdk_current_version}/analytics-java-client/examples[example Maven project] you can copy to get started quickly.
 
 == Adding the SDK to an Existing Project
 
@@ -53,7 +52,7 @@ import java.util.List;
 
 public class Example {
   public static void main(String[] args) {
-    var connectionString = "https://...:18095";
+    var connectionString = "https://<your_hostname>:" + PORT;
     var username = "...";
     var password = "...";
 
@@ -95,3 +94,10 @@ public class Example {
   }
 }
 ----
+
+
+=== Connection String
+
+The `connStr` in the above example should take the form of "https://<your_hostname>:" + PORT 
+
+include::{version-common}@analytics-sdk:shared:partial$connstr.adoc[tag=connstr]
