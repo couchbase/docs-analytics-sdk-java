@@ -29,7 +29,8 @@ any changes to expected behavior are noted in the release notes that follow.
 
 === Version 1.0.0 (?? July 2025)
 
+https://docs.couchbase.com/sdk-api/analytics-java-client-1.0.0[API Reference]
 
-
-
+This is the first General Availability (GA) release of the new Analytics Java SDK. 
+It supports executing queries against Enterprise Analytics clusters, with additional features planned for future releases.
 // end::all[]
