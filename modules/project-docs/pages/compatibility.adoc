@@ -9,7 +9,7 @@ Plus notes on Cloud, networks, and AWS Lambda.
 {description}
 
 
-The {sdk_dot_minor} {name-sdk} requires Java 17 or later to be installed.
+The {sdk_dot_minor} {name-sdk} requires Java 8 or later to be installed.
 We recommend using the most recent long-term support (LTS) version of OpenJDK.
 
 TIP: Remember to keep your Java installation up to date with the latest patches.
