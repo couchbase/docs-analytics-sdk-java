@@ -50,7 +50,7 @@ Here is an example connection string with two parameters:
 
 [source]
 ----
-couchbases://example.com?timeout.connect_timeout=30s&timeout.query_timeout=2m
+https://example.com?timeout.connect_timeout=30s&timeout.query_timeout=2m
 ----
 
 If the same parameter name appears in the connection string more than once, the SDK uses the rightmost value.
@@ -63,11 +63,11 @@ TIP: If your application reads the connection string from a config file (or othe
 [#durations]
 === Durations
 
-For client settings that represent durations, the connection string parameter's value is specified using the format accepted by https://pkg.go.dev/time#ParseDuration[Golang's time.ParseDuration] method.
+For client settings that represent durations, the connection string parameter's value is specified using the following format:
 
 > A duration string is a possibly signed sequence of decimal numbers, each with optional fraction and a unit suffix, such as "300ms", "-1.5h" or "2h45m". Valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h".
 
-Note that although the Golang syntax allows negative durations, the SDK rejects non-positive timeout durations.
+The SDK rejects non-positive timeout durations.
 
 
 [#booleans]
@@ -183,21 +183,9 @@ TIP: If you prefer not to work with the `Deserializer` interface, you can always
 Then you can process the byte array however you like.
 
 
-[#custom-deserializers]
+////
 ==== Custom deserializers
 
 Implement the `Deserializer` interface to add support for other JSON processing libraries.
 The SDK source code repository includes https://github.com/couchbase/couchbase-jvm-clients/tree/master/columnar-java-client/src/test/java/com/couchbase/columnar/client/java/examples/codec[examples for Gson and DSL-JSON] that you can copy into your own project or use as a starting point for other libraries.
-
-
-[#dns-srv]
-=== DNS SRV
-
-By default, the SDK does a DNS SRV lookup on the connection string's hostname in order to locate nodes in the cluster.
-If for some reason you need to disable this behavior, set the `srv` connection string parameter to `false`.
-For example:
-
-[source]
-----
-couchabses://example.com?srv=false
-----
+////
