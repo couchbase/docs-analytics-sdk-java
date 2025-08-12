@@ -13,10 +13,11 @@
 
 [abstract]
 {description}
-It contains best practices as well as information on TLS/SSL and advanced connection options, and a sub-page on troubleshooting Cloud connections.
+It contains best practices as well as information on TLS/SSL and advanced connection options, and a sub-page on troubleshooting remote connections during devlopment.
 
 
-Our xref:hello-world:start-using-sdk.adoc[Getting Started pages] cover the basics of making a connection to an Enterprise Analytics cluster (Capella or self-managed).
+Our xref:hello-world:start-using-sdk.adoc[Getting Started pages] cover the basics of making a connection to an Enterprise Analytics cluster.
+// (Capella or self-managed).
 This page is a wider look at the topic.
 
 
@@ -26,13 +27,13 @@ The examples below use these imports:
 
 [source,java]
 ----
-import com.couchbase.columnar.client.java.Cluster;
-import com.couchbase.columnar.client.java.Credential;
-import com.couchbase.columnar.client.java.QueryResult;
+import com.couchbase.analytics.client.java.Cluster;
+import com.couchbase.analytics.client.java.Credential;
+import com.couchbase.analytics.client.java.QueryResult;
 ----
 
-A connection to a Capella Columnar cluster is represented by a `Cluster` object.
-A `Cluster` provides access to databases, scopes, and collections, as well as various Columnar services and management interfaces.
+A connection to an Enterprise Analytics cluster is represented by a `Cluster` object.
+A `Cluster` provides access to databases, scopes, and collections, as well as various Analytics services and management interfaces.
 The simplest way to create a `Cluster` object is to call `Cluster.newInstance()` with a <<connection-strings, connection string>>, username, and password:
 
 
@@ -41,7 +42,7 @@ The simplest way to create a `Cluster` object is to call `Cluster.newInstance()`
 ----
 public class Example {
   public static void main(String[] args) {
-    var connectionString = "192.168.5.5:18095";
+    var connectionString = "https://192.168.5.5:18095";
     var username = "...";
     var password = "...";
 
@@ -116,7 +117,7 @@ The client fetches the full address list from the first node it is able to conta
 
 .Connection string with two parameters
 ----
-couchbases://localhost:8095?timeout.connect_timeout=30s&timeout.query_timeout=2m
+http://localhost:8095?timeout.connect_timeout=30s&timeout.query_timeout=2m
 ----
 
 The full list of recognized parameters is documented in the xref:ref:client-settings.adoc[client settings reference].
@@ -280,7 +281,7 @@ Proceeding with normal bootstrap.
 
 We strongly recommend that the client and server xref:project-docs:compatibility.adoc#network-requirements[are in the same LAN-like environment] (e.g. AWS Region).
 As this may not always be possible during development, read the guidance on working with xref:ref:client-settings.adoc#commonly-used-options[constrained network environments].
-More details on connecting your client code to Couchbase Capella can be found xref:cloud:clouds:connect-an-sdk.adoc#connecting-your-sdk-to-capella[in the Capella Operational docs].
+// More details on connecting your client code to Couchbase Capella can be found xref:cloud:clouds:connect-an-sdk.adoc#connecting-your-sdk-to-capella[in the Capella Operational docs].
 
 
 
