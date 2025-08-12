@@ -1,6 +1,6 @@
 = Logging
 :page-toclevels: 2
-:description: Configuring logging with the Columnar Java SDK.
+:description: Configuring logging with the Analytics Java SDK.
 
 [abstract]
 {description}
@@ -26,7 +26,7 @@ It is actively maintained, and recommended for most users.
 
 *Version 1.7* is no longer maintained, but you can still use it if your preferred SLF4J binding does not support version 2.
 
-The Couchbase SDK is compatible with both versions of the SLF4J API.
+The Analytics SDK is compatible with both versions of the SLF4J API.
 The SDK's Maven POM has a dependency on version 1.7, but you can override this by using version 2 in your project.
 ====
 
