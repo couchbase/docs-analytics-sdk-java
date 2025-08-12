@@ -43,6 +43,12 @@ include::{sdk_api}@analytics-sdk:shared:partial$network-requirements.adoc[tag=la
 
 
 
+== Enterprise Analytics Compatibility
+
+This is the initial release of Enterprise Analytics and the Analytics SDKs.
+As such, the Analytics SDK is fully compatible with Enterprise Analytics.
+
+////
 == Capella Analytics Compatibility
 
 
@@ -50,7 +56,7 @@ Capella Analytics is a fully hosted service, continually updated, and offering t
 with users having a few weeks to upgrade from the previous version.
 As such, the latest Couchbase Columnar SDKs are tested against the latest versions.
 Where older versions of the {name-sdk} pre-date significant new features in Analytics, those differences will be noted in this section.
-
+////
 
 
 
