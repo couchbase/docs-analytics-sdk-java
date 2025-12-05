@@ -65,7 +65,8 @@ See the link:++https://docs.couchbase.com/sdk-api/couchbase-analytics-java-clien
 
 === Positional and Named Parameters
 
-Supplying parameters as individual arguments to the query allows the query engine to optimize the parsing and planning of the query. You can either supply these parameters by name or by position.
+Supplying parameters as individual arguments to the query allows the query engine to optimize the parsing and planning of the query. 
+You can either supply these parameters by name or by position.
 
 Execute a streaming query with positional arguments:
 
