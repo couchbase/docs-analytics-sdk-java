@@ -166,14 +166,6 @@ The client fetches the full address list from the first node it is able to conta
 ////
 
 
-.Connection string with two parameters
-----
-http://localhost:8095?timeout.connect_timeout=30s&timeout.query_timeout=2m
-----
-
-The full list of recognized parameters is documented in the xref:ref:client-settings.adoc[client settings reference].
-
-
 ////
 Any client setting with a system property name may also be specified as a connection string parameter (without the `com.couchbase.env.` prefix).
 
