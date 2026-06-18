@@ -90,8 +90,8 @@ From the 1.1 SDK (with Enterprise Analytics Server 2.2+) JWT is supported.
 
 [source,java]
 ----
-var credential = Jwt.Create(Credential token);
-public static Cluster Create(string connectionString, Credential credential);
+var credential = Credential.ofJwt("...");
+var cluster = Cluster.newInstance(connectionString, credential);
 ----
 
 
@@ -106,19 +106,30 @@ The SDK reads the certificate and private key from a `PKCS#12` file:
 
 [source,java]
 ----
-var credential = ClientCertificate.FromPem(certPath, keyPath);
-public static Cluster Create(string connectionString, Credential credential);
+var credential = Credential.fromKeyStore(
+    Paths.get("path/to/client-cert-and-key.p12"),
+    password
+);
+var cluster = Cluster.newInstance(connectionString, credential);
 ----
 
 
 == Certificate Authority
 
-To make a TLS connection to an Enterprise Analytics cluster with a root certificate issued by a trusted CA (Certificate Authority), you do not need to add this to your configuration --
-the platform's defaults are automatically trusted.
+By default, the Analytics SDK trusts the same well-known Certificate Authorities (CAs) as the JVM, plus the Couchbase Capella CA.
+This works for most deployments.
 
-The cluster's root certificate just needs to be issued by a CA whose certificate is in your system trust store.
-This includes well known CAs (including GoDaddy and Verisign), plus any other CA certificates that you wish to add.
+If you need to trust a different CA, or want to trust only a specific CA, you can override the default trust settings by telling the Analytics SDK which CA certificates to trust.
 
+[source,java]
+----
+var cluster = Cluster.newInstance(
+  connectionString,
+  credential,
+  options -> options
+    .security(sec -> sec.trustOnlyPemFile(Paths.get("path/to/ca.pem")))
+);
+----
 
 
 // For Columnar, as for all Capella products, connection must be made with Transport Layer Security (TLS) -- for full encryption of client-side traffic --
