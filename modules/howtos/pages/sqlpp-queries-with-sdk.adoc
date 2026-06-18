@@ -104,9 +104,6 @@ cluster.executeStreamingQuery(
 
 In the 2.2 release, the Enterprise Analytics Server adds an asynchronous request API.
 The SDK will send a request, poll for results, and then fetch once the result is available.
-The SDK supports each stage of this information flow:
-
-`clusterOrScope.StartQuery()` → `QueryHandle` → `QueryStatus` → `QueryResultHandle`
 
 
 .Server Asynchronous API Example
