@@ -1,10 +1,10 @@
-= Java Analytics SDK
+= Java Analytics SDK {sdk_dot_minor}
 :page-layout: landing-page-top-level-sdk
 :page-role: tiles
 :!sectids:
 
 
-= Java Analytics SDK
+= Java Analytics SDK {sdk_dot_minor}
 
 The Java Analytics SDK allows you to connect to an Enterprise Analytics cluster from Java.
 For connecting to a Couchbase Server Cluster -- self-managed, or Capella Operational --
