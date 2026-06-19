@@ -94,6 +94,9 @@ var credential = Credential.ofJwt("...");
 var cluster = Cluster.newInstance(connectionString, credential);
 ----
 
+Typically, JWTs have a short validity period.
+Renew JWTs with `cluster.credential(freshJwtCredential)`
+
 
 === Certificate Authentication
 
