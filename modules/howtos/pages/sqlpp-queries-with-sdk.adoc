@@ -100,7 +100,7 @@ cluster.executeStreamingQuery(
 ----
 
 
-[[#server-asynchronous-api]]
+[[server-asynchronous-api]]
 == {async-server-api-feature-name}
 
 Enterprise Analytics Server 2.2 adds a {async-server-api-feature-name}.
