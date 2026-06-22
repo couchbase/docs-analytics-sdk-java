@@ -113,7 +113,7 @@ The `connStr` in the above example should take the form of "https://<your_hostna
 include::{version-common}@analytics-sdk:shared:partial$connstr.adoc[tag=connstr]
 
 
-[[#server-asynchronous-api]]
+[[server-asynchronous-api]]
 === {async-server-api-feature-name}
 
 Enterprise Analytics 2.2 introduces a {async-server-api-feature-name}.
