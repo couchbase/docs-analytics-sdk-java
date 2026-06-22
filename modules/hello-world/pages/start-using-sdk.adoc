@@ -86,7 +86,7 @@ public class Example {
       );
 
       // Execute a streaming query with positional arguments.
-
+      cluster.executeStreamingQuery(
         "select ?=1",
         row -> System.out.println("Got row: " + row),
         options -> options
