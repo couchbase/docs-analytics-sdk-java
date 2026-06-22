@@ -102,7 +102,7 @@ cluster.executeStreamingQuery(
 [[#server-asynchronous-api]]
 == {async-server-api-feature-name}
 
-Enterprise Analytics Server 2.2 adds a{async-server-api-feature-name}.
+Enterprise Analytics Server 2.2 adds a {async-server-api-feature-name}.
 The SDK will send a request, poll for results, and then fetch once the result is available.
 
 
