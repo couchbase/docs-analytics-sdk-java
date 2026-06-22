@@ -46,7 +46,7 @@ include::{sdk_api}@analytics-sdk:shared:partial$network-requirements.adoc[tag=la
 
 
 The 1.1 releases of the Analytics SDK are fully compatible with all currently supported releases of Enterprise Analytics.
-The 1.1 {name_platform} SDK also supports the streaming {async-server-api-feature-name} introduced in self-managed Enterprise Analytics Server 2.2.
+The 1.1 {name_platform} SDK also supports the poll-based {async-server-api-feature-name} introduced in self-managed Enterprise Analytics Server 2.2.
 
 
 ////
