@@ -1,5 +1,5 @@
 = Error Messages
-:description: The standardized error codes and eceptions returned by the Operational Insights Java SDK, from cluster connection to {sqlpp} query.
+:description: The standardized error codes and eceptions returned by the Analytics Java SDK, from cluster connection to {sqlpp} query.
 :nav-title: Error Codes
 
 [abstract]
