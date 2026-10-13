@@ -1,5 +1,5 @@
 = Error Messages
-:description: The standardized error codes and eceptions returned by the Enterprise Analytics Java SDK, from cluster connection to {sqlpp} query.
+:description: The standardized error codes and eceptions returned by the Operational Insights Java SDK, from cluster connection to {sqlpp} query.
 :nav-title: Error Codes
 
 [abstract]
@@ -24,7 +24,7 @@ An `AnalticsException` is thrown when an interaction (or attempted interaction) 
 
 == Other Analytics Error Codes
 
-For other errors the {name-sdk} passes through the Analytics error codes from Enterprise Analytics.
+For other errors the {name-sdk} passes through the Analytics error codes from Operational Insights.
 
 For a full list of these error codes, see xref:{version-server}@server:analytics:error-codes.adoc[Analytics Error Codes].
 
