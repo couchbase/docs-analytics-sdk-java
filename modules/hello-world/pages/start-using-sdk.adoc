@@ -110,13 +110,13 @@ public class Example {
 
 The `connStr` in the above example should take the form of "https://<your_hostname>:" + PORT 
 
-include::{version-common}@operational-insights-sdk:shared:partial$connstr.adoc[tag=connstr]
+include::{version-common}@analytics-sdk:shared:partial$connstr.adoc[tag=connstr]
 
 
 [[server-asynchronous-api]]
 === {async-server-api-feature-name}
 
-Operational Insights 2.2 introduced a {async-server-api-feature-name}.
+Operational Insights 2.2 introduces a {async-server-api-feature-name}.
 The SDK sends a request, polls for results, and then fetches once the result is available.
 
 .Server Asynchronous API Example
@@ -128,4 +128,4 @@ include::devguide:example$java/ServerAsync.java[indent=0,tag=server-async]
 
 == Migration from Row-Based Analytics
 
-include::{version-common}@operational-insights-sdk:shared:partial$migration.adoc[tag=migration]
+include::{version-common}@analytics-sdk:shared:partial$migration.adoc[tag=migration]

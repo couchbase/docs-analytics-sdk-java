@@ -67,7 +67,7 @@ However, the certificate is bundled with the SDK, and is automatically trusted u
 == Connection Strings
 
 
-include::{version-common}@operational-insights-sdk:shared:partial$connstr.adoc[tag=more-connstr]
+include::{version-common}@analytics-sdk:shared:partial$connstr.adoc[tag=more-connstr]
 
 
 
