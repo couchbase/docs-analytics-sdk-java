@@ -86,7 +86,7 @@ Basic Access Authentication is shown in the example <<#connecting-to-a-cluster,a
 
 === JSON Web Tokens (JWT)
 
-From the 1.1 SDK (with Operational Insights Server 2.2+) JWT is supported.
+JWT is supported with Operational Insights Server ``2.2+``.
 
 [source,java]
 ----
@@ -100,7 +100,7 @@ Renew JWTs with `cluster.credential(freshJwtCredential)`
 
 === Certificate Authentication
 
-From the 1.1 Analytics SDK (with Operational Insights Server 2.2+) certificate authentication is supported.
+Certificate authentication is supported with Operational Insights Server ``2.2+``.
 A conceptual and architectural overview of Operational Insights's support of X.509 certificates is provided in the xref:{version-server}@server:learn:security/certificates.adoc[Server certificates docs].
 Practical information on handling certificates can be found in the xref:{version-ea}@enterprise-analytics:manage:manage-security/manage-certificates.adoc[Operational Insights certificates docs].
 
