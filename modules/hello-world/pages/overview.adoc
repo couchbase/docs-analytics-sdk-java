@@ -6,18 +6,18 @@
 
 = Java Analytics SDK
 
-The Java Analytics SDK allows you to connect to an Enterprise Analytics cluster from Java.
+The Java Analytics SDK allows you to connect to an Operational Insights cluster from Java.
 For connecting to a Couchbase Server Cluster -- self-managed, or Capella Operational --
 see our xref:java-sdk:hello-world:overview.adoc[Java Operational SDK].
 
-TIP: Connecting to a xref:enterprise-analytics:intro:intro.adoc[_Capella_ Analytics] cluster from Java currently requires a xref:java-columnar-sdk:hello-world:overview.adoc[Java Columnar SDK].
+TIP: Connecting to a xref:enterprise-analytics:intro:intro.adoc[Operational Insights _Capella_] cluster from Java currently requires a xref:java-columnar-sdk:hello-world:overview.adoc[Java Columnar SDK].
 
 
 {empty} +
 
 == icon:database[] Using Your Analytics Cluster
 
-How-to guides and tutorials to help you start your development journey with Enterprise Analytics and the Java SDK.
+How-to guides and tutorials to help you start your development journey with Operational Insights and the Java SDK.
 
 ++++
 <div class="card-row three-column-row">
@@ -26,7 +26,7 @@ How-to guides and tutorials to help you start your development journey with Ente
 [.column]
 .Getting Started
 * xref:hello-world:start-using-sdk.adoc[]
-* xref:howtos:managing-connections.adoc[Connecting to Enterprise Analytics]
+* xref:howtos:managing-connections.adoc[Connecting to Operational Insights]
 * xref:howtos:sqlpp-queries-with-sdk.adoc[]
 
 ////
