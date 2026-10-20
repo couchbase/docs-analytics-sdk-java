@@ -4,7 +4,7 @@
 :!sectids:
 
 
-= Java Analytics SDK
+= Java Analytics SDK 1.0
 
 The Java Analytics SDK allows you to connect to an Operational Insights cluster from Java.
 For connecting to a Couchbase Server Cluster -- self-managed, or Capella Operational --
